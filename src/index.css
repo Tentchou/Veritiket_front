@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap');
+
+/* Configuration spécifique à Tailwind v4 */
+@theme {
+  --color-navy-deep: #020617;
+  --color-navy-slate: #0f172a;
+  --color-indigo-accent: #818cf8;
+  --font-urbanist: 'Urbanist', sans-serif;
+}
+
+body {
+  @apply bg-navy-slate font-urbanist text-slate-200;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Suppression des soulignements indésirables de Bootstrap */
+a, a:hover, a:focus {
+  text-decoration: none !important;
+}
+
+/* Effet Striped (Zébré) pour les tableaux */
+tbody tr:nth-child(even) {
+  background-color: rgba(129, 140, 248, 0.04); /* Teinte indigo très légère */
+}
+
+/* On s'assure que l'effet de survol (hover) reste bien visible par-dessus le zébré */
+tbody tr:hover {
+  background-color: rgba(129, 140, 248, 0.08) !important;
+}
