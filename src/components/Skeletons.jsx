@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useTheme } from '../contexts/ThemeContext';
 
 export const StatCardSkeleton = () => {
@@ -32,11 +32,11 @@ export const EventRowSkeleton = () => {
 
   return (
     <tr className={`border-b ${borderClass} animate-pulse`}>
-      <td className="py-5 px-6"><div className={`h-5 w-48 rounded ${pulseBlock}`}></div></td>
-      <td className="py-5 px-6"><div className={`h-4 w-32 rounded ${pulseBlock}`}></div></td>
-      <td className="py-5 px-6"><div className={`h-4 w-24 rounded ${pulseBlock}`}></div></td>
-      <td className="py-5 px-6"><div className={`h-6 w-24 rounded-full ${pulseBlock}`}></div></td>
-      <td className="py-5 px-6 flex justify-end"><div className={`h-9 w-24 rounded-xl ${pulseBlock}`}></div></td>
+      <td className="py-2 px-3"><div className={`h-5 w-48 rounded ${pulseBlock}`}></div></td>
+      <td className="py-2 px-3"><div className={`h-4 w-32 rounded ${pulseBlock}`}></div></td>
+      <td className="py-2 px-3"><div className={`h-4 w-24 rounded ${pulseBlock}`}></div></td>
+      <td className="py-2 px-3"><div className={`h-6 w-24 rounded-full ${pulseBlock}`}></div></td>
+      <td className="py-2 px-3 flex justify-end"><div className={`h-9 w-24 rounded-xl ${pulseBlock}`}></div></td>
     </tr>
   );
 };

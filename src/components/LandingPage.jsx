@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 import { Link } from 'react-router-dom';
 
@@ -40,7 +40,7 @@ const LandingPage = () => {
           VeriTicket <span className="text-indigo-accent block md:inline">SaaS</span>
         </h1>
         <p className="mt-6 text-xl md:text-2xl text-slate-400 font-medium max-w-2xl mx-auto">
-          La plateforme de billetterie sécurisée pour les organisateurs d'élite en Afrique Centrale.
+          La plateforme de billetterie sécurisée pour les organisateurs d'élite en Afrique.
         </p>
         
         {/* LA ZONE DES GROS BOUTONS D'ACTION (En forme de pilule) */}
@@ -49,11 +49,11 @@ const LandingPage = () => {
           {/* SI NON CONNECTÉ : On propose l'inscription ou la démo */}
           <SignedOut>
             <SignInButton mode="modal">
-              <button className="px-8 py-4 bg-white text-navy-deep rounded-full font-bold text-lg hover:bg-slate-200 transition-transform active:scale-95 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+              <button className="px-8 py-4 bg-slate-200 text-navy-deep rounded-full font-bold text-lg hover:bg-slate-300 transition-transform active:scale-95 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
                 Démarrer maintenant
               </button>
             </SignInButton>
-            <button className="px-8 py-4 bg-transparent border-2 border-slate-700 text-white rounded-full font-bold text-lg hover:bg-slate-800 transition">
+            <button className="px-8 py-4 bg-transparent border-2 border-slate-700 text-white rounded-full font-bold text-lg hover:bg-slate-800 transition shadow-[0_0_40px_rgba(255,255,255,0.2)]">
               Voir la démo
             </button>
           </SignedOut>

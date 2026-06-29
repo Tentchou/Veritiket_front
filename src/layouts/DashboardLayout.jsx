@@ -30,8 +30,8 @@ const DashboardLayout = ({ children }) => {
   const menuItems = [
     { name: 'Vue d\'ensemble', path: '/dashboard', icon: 'fa-solid fa-chart-pie' },
     { name: 'Mes Événements', path: '/dashboard/events', icon: 'fa-solid fa-calendar-days' },
-    { name: 'Scanners (Vigiles)', path: '/dashboard/scanners', icon: 'fa-solid fa-user-shield' },
-    { name: 'Paramètres', path: '/dashboard/settings', icon: 'fa-solid fa-gear' },
+    // { name: 'Scanners (Vigiles)', path: '/dashboard/scanners', icon: 'fa-solid fa-user-shield' },
+    // { name: 'Paramètres', path: '/dashboard/settings', icon: 'fa-solid fa-gear' },
   ];
 
   return (
