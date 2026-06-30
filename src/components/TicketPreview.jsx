@@ -24,7 +24,7 @@ const TicketPreview = ({ templateId, category, price }) => {
   const current = styles[templateId] || styles.minimal;
 
   return (
-    <div className={`w-full border rounded-3xl flex flex-col md:flex-row overflow-hidden shadow-2xl relative transition-all duration-300 ${current.bg}`}>
+    <div className={`w-full border flex flex-col md:flex-row overflow-hidden shadow-2xl relative transition-all duration-300 ${current.bg}`}>
       
       {/* CORPS DU BILLET */}
       <div className="flex-1 p-6 flex flex-col justify-between min-w-0 relative">

@@ -22,7 +22,7 @@ const TemplateSelector = ({ value, onChange }) => {
           <div 
             key={tpl.id}
             onClick={() => onChange(tpl.id)}
-            className={`cursor-pointer border-2 rounded-2xl p-4 transition-all duration-200 ${bgClass}`}
+            className={`cursor-pointer border-2 rounded-xxl p-4 transition-all duration-200 ${bgClass}`}
           >
             <div className="flex items-center gap-3 mb-2">
               <div className={`w-8 h-8 rounded-full flex items-center justify-center ${isSelected ? 'bg-indigo-500 text-white' : 'bg-slate-500/20 text-slate-500'}`}>

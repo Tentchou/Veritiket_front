@@ -19,7 +19,7 @@ const StatCard = ({ title, value, icon, gradient, trend, trendLabel, suffix }) =
   const bgIconColor = isDarkMode ? 'text-slate-800 opacity-20' : 'text-slate-100 opacity-60';
 
   return (
-    <div className={`rounded-3xl p-6 relative overflow-hidden group border transition-colors duration-300 ${gradient ? gradient + ' shadow-xl' : defaultBg}`}>
+    <div className={`p-6 relative overflow-hidden group border transition-colors duration-300 ${gradient ? gradient + ' shadow-xl' : defaultBg}`}>
       
       {/* Icône d'arrière-plan géante et transparente */}
       <div className={`absolute -right-10 -top-10 transition-transform duration-500 group-hover:scale-110 ${gradient ? 'text-white/10' : bgIconColor}`}>

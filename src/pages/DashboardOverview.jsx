@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSearchParams, Link } from 'react-router-dom'; // <-- Ajout de useSearchParams
 import { toast } from 'sonner';
 import DashboardLayout from '../layouts/DashboardLayout';
@@ -58,7 +58,7 @@ const DashboardOverview = () => {
           </p>
         </div>
         {stats && (
-          <Link to="/dashboard/events" className="px-4 py-2 bg-slate-800 border border-slate-700/60 hover:bg-slate-700 text-slate-300 rounded-xl text-sm font-medium transition-all no-underline">
+          <Link to="/dashboard/events" className="px-4 py-2 bg-slate-800 border border-slate-700/60 hover:bg-slate-700 text-slate-300 text-sm font-medium transition-all no-underline">
             <i className="fa-solid fa-arrow-left mr-2"></i> Changer d'événement
           </Link>
         )}
