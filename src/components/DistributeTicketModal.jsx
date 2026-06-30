@@ -45,11 +45,11 @@ const DistributeTicketModal = ({ ticket, onClose, onSuccess }) => {
             <input 
               autoFocus required type="text" placeholder="Ex: Paul - 690000000" 
               value={name} onChange={(e) => setName(e.target.value)}
-              className={`w-full px-4 py-3 rounded-xl border outline-none font-medium transition-colors ${inputClass}`} 
+              className={`w-full px-4 py-3 border outline-none font-medium transition-colors ${inputClass}`} 
             />
           </div>
           
-          <button disabled={loading} type="submit" className="w-full py-3 bg-indigo-accent hover:bg-indigo-600 text-white rounded-xl font-bold shadow-lg transition-all flex items-center justify-center gap-2 disabled:opacity-50">
+          <button disabled={loading} type="submit" className="w-full py-3 bg-indigo-accent border hover:bg-indigo-600 text-white rounded-xl font-bold shadow-lg transition-all flex items-center justify-center gap-2 disabled:opacity-50">
             {loading ? <i className="fa-solid fa-circle-notch fa-spin"></i> : <i className="fa-solid fa-check"></i>}
             {loading ? 'Assignation...' : 'Valider la distribution'}
           </button>
